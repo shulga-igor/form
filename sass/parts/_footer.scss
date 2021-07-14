@@ -1,0 +1,29 @@
+.footer{
+    background: #e9ecf0;
+
+    .top{
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 991px) {
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            padding: 30px 0;
+        }
+    }
+
+
+    .bottom{
+        padding: 35px 0;
+        background: #d9dce1;
+    }
+
+    .copy{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+}

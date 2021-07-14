@@ -1,0 +1,33 @@
+.banner{
+    background: url(../img/main_banner.jpg) 0px 0px no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    
+    .logo-wrapper{
+        text-align: center;
+        margin-bottom: 32px;
+        a{
+            display: inline-block;
+            img{
+                width: 113px;
+            }
+        }
+    }
+
+    &-title{
+        text-align: center;
+        font-size: 31px;
+        line-height: 1.6;
+        color: $base-white;
+        text-shadow: 0 10px 10px #000;
+        margin: 0 0 28px 0;
+    }
+
+    .arrow{
+        text-align: center;
+        img{
+            width: 51px;
+        }
+    }
+
+}
