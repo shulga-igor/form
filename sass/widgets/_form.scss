@@ -1,29 +1,50 @@
 .form-blc{
     padding: 24px 0 50px;
-
+    @media screen and (max-width: 991px) {
+        padding-top: 15px;
+    }
 
     .form-row{
         display: flex;
         margin: 0 -30px;
         padding-top: 10px;
         padding-bottom: 24px;
+        @media screen and (max-width: 991px) {
+            flex-direction: column;
+            padding-top: 0;
+            padding-bottom: 0;
 
+        }
     }
 
     .form-item{
         flex: 1;
         margin: 0 30px;
+        @media screen and (max-width: 991px) {
+            margin-bottom: 12px;
+        }
         &.dark{
             padding: 30px;
             margin-top: 45px;
+            @media screen and (max-width: 991px) {
+                padding: 20px 15px;
+                margin-top: 18px;
+            }
         }
 
         .form-row{
             margin: 0 -15px;
             padding-top: 0;
             padding-bottom: 0;
+            @media screen and (max-width: 991px) {
+                flex-direction: row;
+                margin: 0 -4px;
+            }
             .form-item{
                 margin: 0 15px;
+                @media screen and (max-width: 991px) {
+                    margin: 0 4px;
+                }
             }
         }
 
@@ -32,6 +53,10 @@
             font-size: 22px;
             margin-bottom: 10px;
             display: block;
+            @media screen and (max-width: 991px) {
+                font-size: 15px;
+                margin-bottom: 6px;
+            }
         }
 
         .form-input{
@@ -42,6 +67,10 @@
             background: $bg-input;
             border: 2px solid #cccccc;
             border-radius: 3px;
+            @media screen and (max-width: 991px) {
+                font-size: 15px;
+                padding: 10px 10px;
+            }
             &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
                 color: #cccccc;
                 opacity: 1; /* Firefox */
@@ -68,6 +97,9 @@
 
     .text-blc{
         max-width: 850px;
+        @media screen and (max-width: 991px) {
+            font-size: 14px;
+        }
         .dot{
             &:before{
                 content: '';
@@ -78,6 +110,13 @@
                 background: #21b1a5;
                 border-radius: 50%;
                 margin-right: 10px;
+                @media screen and (max-width: 991px) {
+                    vertical-align: baseline;
+                    width: 11px;
+                    height: 11px;
+                    margin-right: 6px;
+                }
+                
             }
         }
 
@@ -95,10 +134,16 @@
         display: flex;
         margin: 0 -15px;
         padding-top: 15px;
+        @media screen and (max-width: 991px) {
+            padding-top: 0;
+        }
         .radio-item{
             margin: 0 15px;
             width: 100%;
             max-width: 165px;
+            @media screen and (max-width: 991px) {
+                max-width: 130px;
+            }
         }
         
         input{
@@ -125,6 +170,10 @@
             cursor: pointer;
             text-align: center;
             position: relative;
+            @media screen and (max-width: 991px) {
+                font-size: 16px;
+                padding: 10px;
+            }
             &::after{
                 content: "";
                 position: absolute;
@@ -135,6 +184,10 @@
                 background: $button-color url(../img/tick.png) center center no-repeat;
                 background-size: 42px 44px;
                 display: none;
+                @media screen and (max-width: 991px) {
+                    background-size: 29px 29px;
+                }
+                
             }
         }
     }
@@ -142,12 +195,18 @@
     .checkbox-text{
         padding-top: 16px;
         margin-bottom: 40px;
+        @media screen and (max-width: 991px) {
+            margin-bottom: 23px;
+        }
         .checkbox{
             position: relative;
             label{
                 line-height: 1.7;
                 cursor: pointer;
                 font-size: 18px;
+                @media screen and (max-width: 991px) {
+                    font-size: 14px;
+                }
             }
             input{
                 opacity: 0;
@@ -172,6 +231,10 @@
                 border-radius: 3px;
                 float: left;
                 display: flex;
+                @media screen and (max-width: 991px) {
+                    width: 23px;
+                    height: 23px;
+                }
                 &:after{
                     content: '';
                     width: 20px;
@@ -181,6 +244,11 @@
                     margin: auto;
                     opacity: 0;
                     transition: all linear .2s;
+                    @media screen and (max-width: 991px) {
+                        width: 15px;
+                        height: 15px;
+                    }
+                    
                 }
             }
         }
@@ -206,9 +274,19 @@
         margin: 0 0 24px 0;
         transform: translateY(-60px);
         background: $second-color;
-
+        @media screen and (max-width: 991px) {
+            transform: translateY(-15px);
+            margin: 0;
+            .form-item{
+                margin: 0 15px 12px;
+            }
+        }
+        
         .text-blc{
             padding: 0 25px;
+            @media screen and (max-width: 991px) {
+                padding: 0 15px;
+            }
         }
 
         .form-row{
@@ -240,6 +318,11 @@
                 margin: 0 10px 0 0;
                 display: flex;
                 max-width: 330px;
+                @media screen and (max-width: 991px) {
+                    font-size: 15px;
+                    max-width: 100%;
+                    padding: 10px;
+                }
                 .placeholder{
                     color: #cccccc;
                 }
@@ -249,6 +332,13 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: pre;
+                    @media screen and (max-width: 991px) {
+                        max-width: 600px;
+                    }
+                    @media screen and (max-width: 767px) {
+                        max-width: 115px;
+                    }
+                    
                 }
             }
             button{
@@ -260,6 +350,9 @@
                 border: none;
                 border-radius: 3px;
                 cursor: pointer;
+                @media screen and (max-width: 991px) {
+                    width: auto;
+                }
             }
         }
 

@@ -10,9 +10,16 @@
         color: $base-white;
         padding: 15px 25px 16px 31px;
         border-radius: 3px;
-        margin: 0 0 40px 0;
+        margin: 36px 0 40px 0;
+        @media screen and (max-width: 991px) {
+            font-size: 15px;
+            padding: 15px;
+            margin: 0px 0 15px 0;
+        }
 
-        margin-top: 36px;
+        &.mobile-gap{
+            margin-top: 20px;
+        }
     }
 
 }

@@ -1,7 +1,11 @@
 .banner{
-    background: url(../img/main_banner.jpg) 0px 0px no-repeat;
+    background: url(../img/main_banner.jpg) center center no-repeat;
     background-size: cover;
     min-height: 350px;
+    @media screen and (max-width: 991px) {
+        min-height: auto;
+    }
+    
     
     .logo-wrapper{
         text-align: center;
@@ -10,6 +14,9 @@
             display: inline-block;
             img{
                 width: 113px;
+                @media screen and (max-width: 991px) {
+                    width: 92px;
+                }
             }
         }
     }
@@ -21,12 +28,18 @@
         color: $base-white;
         text-shadow: 0 10px 10px #000;
         margin: 0 0 28px 0;
+        @media screen and (max-width: 991px) {
+            font-size: 16px;
+        }
     }
 
     .arrow{
         text-align: center;
         img{
             width: 51px;
+            @media screen and (max-width: 991px) {
+                width: 32px;
+            }
         }
     }
 
