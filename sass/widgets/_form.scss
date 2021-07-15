@@ -6,9 +6,9 @@
 
     .form-row{
         display: flex;
-        margin: 0 -30px;
+        margin: 0 -15px;
         padding-top: 10px;
-        padding-bottom: 24px;
+        padding-bottom: 10px;
         @media screen and (max-width: 991px) {
             flex-direction: column;
             padding-top: 0;
@@ -19,7 +19,7 @@
 
     .form-item{
         flex: 1;
-        margin: 0 30px;
+        margin: 0 15px;
         @media screen and (max-width: 991px) {
             margin-bottom: 12px;
         }
@@ -50,8 +50,8 @@
 
 
         label{
-            font-size: 22px;
-            margin-bottom: 10px;
+            font-size: 18px;
+            margin-bottom: 8px;
             display: block;
             @media screen and (max-width: 991px) {
                 font-size: 15px;
@@ -62,8 +62,8 @@
         .form-input{
             display: block;
             width: 100%;
-            font-size: 24px;
-            padding: 13px 15px;
+            font-size: 16px;
+            padding: 12px 15px;
             background: $bg-input;
             border: 2px solid #cccccc;
             border-radius: 3px;
@@ -97,6 +97,7 @@
 
     .text-blc{
         max-width: 850px;
+        
         @media screen and (max-width: 991px) {
             font-size: 14px;
         }
@@ -140,7 +141,7 @@
         .radio-item{
             margin: 0 15px;
             width: 100%;
-            max-width: 165px;
+            max-width: 125px;
             @media screen and (max-width: 991px) {
                 max-width: 130px;
             }
@@ -162,7 +163,7 @@
 
         .radio-button{
             background: #272727;
-            font-size: 24px;
+            font-size: 16px;
             color: $base-white;
             width: 100%;
             padding: 11px 15px;
@@ -182,7 +183,7 @@
                 right: 0;
                 bottom: 0;
                 background: $button-color url(../img/tick.png) center center no-repeat;
-                background-size: 42px 44px;
+                background-size: 29px 29px;
                 display: none;
                 @media screen and (max-width: 991px) {
                     background-size: 29px 29px;
@@ -203,7 +204,7 @@
             label{
                 line-height: 1.7;
                 cursor: pointer;
-                font-size: 18px;
+                font-size: 16px;
                 @media screen and (max-width: 991px) {
                     font-size: 14px;
                 }
@@ -223,8 +224,8 @@
             }
 
             .checkbox-wrap{
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
                 background: $bg-input;
                 border: 2px solid #cccccc;
                 margin-right: 10px;
@@ -237,8 +238,8 @@
                 }
                 &:after{
                     content: '';
-                    width: 20px;
-                    height: 20px;
+                    width: 25px;
+                    height: 25px;
                     background: $button-color;
                     border-radius: 3px;
                     margin: auto;
@@ -258,13 +259,18 @@
         width: 100%;
         background: $button-color;
         color: $base-white;
-        padding: 11px 15px;
+        padding: 20px 15px;
         text-align: center;
         border-radius: 3px;
         border: none;
         cursor: pointer;
         transition: all linear .2s;
         letter-spacing: 1px;
+        font-weight: 700;
+        text-transform: uppercase;
+        @media screen and (max-width: 991px) {
+            padding: 12px 10px;
+        }
         &:hover{
             background: #000;
         }
@@ -272,13 +278,13 @@
 
     .additional-blc{
         margin: 0 0 24px 0;
-        transform: translateY(-60px);
+        transform: translateY(-30px);
         background: $second-color;
         @media screen and (max-width: 991px) {
             transform: translateY(-15px);
             margin: 0;
             .form-item{
-                margin: 0 15px 12px;
+                margin: 0 0 12px;
             }
         }
         
@@ -310,14 +316,14 @@
             display: flex;
             .file-name{
                 flex: 1;
-                font-size: 24px;
+                font-size: 16px;
                 padding: 10px 15px;
                 background: $bg-input;
                 border: 2px solid #cccccc;
                 border-radius: 3px;
                 margin: 0 10px 0 0;
                 display: flex;
-                max-width: 330px;
+                max-width: 370px;
                 @media screen and (max-width: 991px) {
                     font-size: 15px;
                     max-width: 100%;
@@ -346,10 +352,11 @@
                 padding: 11px 15px;
                 background: #272727;
                 color: $base-white;
-                width: 200px;
+                width: 175px;
                 border: none;
                 border-radius: 3px;
                 cursor: pointer;
+                font-size: 16px;
                 @media screen and (max-width: 991px) {
                     width: auto;
                 }
